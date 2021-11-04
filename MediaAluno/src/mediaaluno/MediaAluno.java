@@ -8,7 +8,7 @@ public class MediaAluno {
        
         Scanner entrada = new Scanner (System.in);
         String aluno;
-        double nota1, nota2, nota3, media;
+        double nota1, nota2, nota3,soma, media;
         
         System.out.println("Informe seu nome");
         aluno = entrada.nextLine();
@@ -21,6 +21,11 @@ public class MediaAluno {
         
         System.out.println("Digite sua terceira nota");
         nota3 = entrada.nextDouble();
+        
+        soma = nota1 + nota2 + nota3;
+        media = soma / 3;
+        
+        System.out.println(aluno + ", Sua média é: " + media);
         
         
     }
